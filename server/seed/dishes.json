@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Poke Bowl",
+    "course": "main",
+    "price": {
+      "amount": 1265,
+      "currency": "EUR"
+    },
+    "photo": "https://source.unsplash.com/collection/10601416/800x601"
+  },
+  {
+    "name": "Miso Soup",
+    "course": "entry",
+    "price": {
+      "amount": 250,
+      "currency": "EUR"
+    },
+    "photo": "https://source.unsplash.com/collection/10601416/800x602"
+  },
+  {
+    "name": "Double Cheese Burguer",
+    "course": "main",
+    "price": {
+      "amount": 850,
+      "currency": "EUR"
+    },
+    "photo": "https://source.unsplash.com/collection/10601416/800x603"
+  },
+  {
+    "name": "Ice Cream",
+    "course": "dessert",
+    "price": {
+      "amount": 850,
+      "currency": "EUR"
+    },
+    "photo": "https://source.unsplash.com/collection/10601416/800x604"
+  },
+  {
+    "name": "Mojito",
+    "course": "drink",
+    "price": {
+      "amount": 600,
+      "currency": "EUR"
+    },
+    "photo": "https://source.unsplash.com/collection/10601416/800x605"
+  },
+  {
+    "name": "Noodles",
+    "course": "entry",
+    "price": {
+      "amount": 925,
+      "currency": "EUR"
+    },
+    "photo": "https://source.unsplash.com/collection/10601416/800x606"
+  },
+  {
+    "name": "Roast Beef",
+    "course": "main",
+    "price": {
+      "amount": 1480,
+      "currency": "EUR"
+    },
+    "photo": "https://source.unsplash.com/collection/10601416/800x607"
+  },
+  {
+    "name": "Bacalhau à Brás",
+    "course": "main",
+    "price": {
+      "amount": 1230,
+      "currency": "EUR"
+    },
+    "photo": "https://source.unsplash.com/collection/10601416/800x608"
+  }
+]

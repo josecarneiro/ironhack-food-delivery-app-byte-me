@@ -1,0 +1,26 @@
+.card__list {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1em 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 16em;
+  margin-right: 1em;
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-shadow: 0 0.25em 1em -0.25em hsla(220, 20%, 70%, 0.75);
+}
+
+.card__media {
+  height: 6em;
+  overflow: hidden;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}

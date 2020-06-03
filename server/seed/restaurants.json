@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Choupana",
+    "category": "brunch",
+    "rating": 4.5,
+    "address": "Avenida António Augusto Aguiar, 25, 3 ESQ.",
+    "price": 1,
+    "phone": "+351 212 345 678",
+    "waitTime": 20,
+    "photo": "https://source.unsplash.com/collection/10601416/800x600"
+  },
+  {
+    "name": "Boa Bao",
+    "category": "asian",
+    "rating": 3.5,
+    "address": "Avenida António Augusto Aguiar, 25, 3 ESQ.",
+    "price": 1,
+    "phone": "+351 212 345 678",
+    "waitTime": 20,
+    "photo": "https://source.unsplash.com/collection/10601416/800x601"
+  },
+  {
+    "name": "Bastardo",
+    "category": "portuguese",
+    "rating": 4.9,
+    "address": "Avenida António Augusto Aguiar, 25, 3 ESQ.",
+    "price": 1,
+    "phone": "+351 212 345 678",
+    "waitTime": 20,
+    "photo": "https://source.unsplash.com/collection/10601416/800x602"
+  },
+  {
+    "name": "Panda Cantina",
+    "category": "brunch",
+    "rating": 4.25,
+    "address": "Avenida António Augusto Aguiar, 25, 3 ESQ.",
+    "price": 1,
+    "phone": "+351 212 345 678",
+    "waitTime": 20,
+    "photo": "https://source.unsplash.com/collection/10601416/800x603"
+  },
+  {
+    "name": "Ajitama",
+    "category": "asian",
+    "rating": 4.85,
+    "address": "Avenida António Augusto Aguiar, 25, 3 ESQ.",
+    "price": 1,
+    "phone": "+351 212 345 678",
+    "waitTime": 20,
+    "photo": "https://source.unsplash.com/collection/10601416/800x604"
+  },
+  {
+    "name": "Honorato",
+    "category": "meat",
+    "rating": 2.45,
+    "address": "Avenida António Augusto Aguiar, 25, 3 ESQ.",
+    "price": 1,
+    "phone": "+351 212 345 678",
+    "waitTime": 20,
+    "photo": "https://source.unsplash.com/collection/10601416/800x605"
+  },
+  {
+    "name": "Pistola & Corazon",
+    "category": "mexican",
+    "rating": 4.65,
+    "address": "Avenida António Augusto Aguiar, 25, 3 ESQ.",
+    "price": 1,
+    "phone": "+351 212 345 678",
+    "waitTime": 20,
+    "photo": "https://source.unsplash.com/collection/10601416/800x606"
+  }
+]
