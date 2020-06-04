@@ -1,0 +1,7 @@
+{
+  "name": "food-delivery-app-example",
+  "scripts": {
+    "start": "node ./server/server.js",
+    "postinstall": "cd client && npm i && npm run build && cd ../server && npm i && cd .."
+  }
+}

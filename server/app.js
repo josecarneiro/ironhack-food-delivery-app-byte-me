@@ -20,6 +20,8 @@ const app = express();
 app.use(serveFavicon(join(__dirname, 'public/images', 'favicon.ico')));
 app.use(logger('dev'));
 
+app.use(express.static(join(__dirname, '../client/build')));
+
 app.use(express.json());
 
 app.use(cookieParser());
@@ -45,6 +47,10 @@ app.use(basicAuthenticationDeserializer);
 app.use('/api/restaurant', restaurantApiRouter);
 app.use('/api/order', orderApiRouter);
 app.use('/api/authentication', authenticationApiRouter);
+
+app.get('*', (req, res, next) => {
+  res.sendFile(join(__dirname, '../client/build/index.html'));
+});
 
 // Catch missing routes and forward to error handler
 app.use((req, res, next) => {

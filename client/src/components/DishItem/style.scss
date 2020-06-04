@@ -1,0 +1,28 @@
+.dish {
+  display: flex;
+  border-bottom: 1px solid hsl(0, 0%, 76%);
+}
+
+.dish__media {
+  width: 4em;
+  height: 4em;
+  overflow: hidden;
+  img {
+    min-height: 100%;
+  }
+}
+
+.dish__body {
+  padding: 0.5em 0.75em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dish__actions {
+  button {
+    width: 4em;
+    height: 4em;
+    border: 0;
+  }
+}

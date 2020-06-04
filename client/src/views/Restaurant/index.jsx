@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './style.scss';
 
+import DishItem from './../../components/DishItem';
+
 import { loadRestaurant } from './../../services/restaurants';
 
 class RestaurantView extends Component {
@@ -46,11 +48,25 @@ class RestaurantView extends Component {
             <small>
               {restaurant.phone} | {restaurant.address}
             </small>
-            <ul>
-              {restaurant.dishes.map(dish => (
-                <li>{dish.name}</li>
-              ))}
-            </ul>
+            <div>
+              {restaurant.dishes.map(dish => {
+                const dishInShoppingBasket = this.props.shoppingBasket.find(
+                  item => item.dish._id === dish._id
+                );
+                let quantity = 0;
+                if (dishInShoppingBasket) {
+                  quantity = dishInShoppingBasket.quantity;
+                }
+                return (
+                  <DishItem
+                    {...dish}
+                    key={dish._id}
+                    quantity={quantity}
+                    changeQuantity={quantity => this.props.changeDishQuantity(dish, quantity)}
+                  />
+                );
+              })}
+            </div>
           </>
         )}
       </div>

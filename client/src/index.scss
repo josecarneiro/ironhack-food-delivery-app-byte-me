@@ -8,6 +8,7 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -18,4 +19,25 @@ a {
 
 small {
   font-size: 0.75em;
+}
+
+button,
+input {
+  padding: 1em;
+  -webkit-appearance: none;
+  background-color: transparent;
+  // border: 0;
+  color: inherit;
+  font: inherit;
+  border: 1px solid rgb(199, 199, 199);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  input,
+  button,
+  label {
+    margin-bottom: 1em;
+  }
 }

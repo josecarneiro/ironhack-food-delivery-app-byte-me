@@ -62,7 +62,7 @@ Save information about each dish.
 
 ### Order
 
-- dishes: Array of Objects: {
+- basket: Array of Objects: {
   dish: ObjectIds with ref: 'Plate',
   quantity: Number 1 - Infinity
   }
@@ -112,4 +112,7 @@ Every endpoint is going to start with "/api"
 - POST - "/authentication/sign-up" - Signs up user
 - POST - "/authentication/sign-out" - Signs out user
 
-- GET - "/authentication/me" - Load information about signed in user
+- GET - "/authentication/me" - Load information about authenticated user
+
+pk_test_DXXJaW8SfKjQ4z2pknR5Adpf00plZbjdbJ
+sk_test_bXOO1GIH2WuWFVNkLcbDgGG000oEsHDBxz
