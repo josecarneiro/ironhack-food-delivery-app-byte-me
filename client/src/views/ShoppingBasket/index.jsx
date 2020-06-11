@@ -14,6 +14,7 @@ class ShoppingBasketView extends Component {
         {this.props.shoppingBasket.map(item => (
           <DishItem
             {...item.dish}
+            key={item.dish._id}
             quantity={item.quantity}
             changeQuantity={quantity => this.props.changeDishQuantity(item.dish, quantity)}
           />

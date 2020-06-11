@@ -45,4 +45,17 @@ const loadRestaurant = id => {
     });
 };
 
-export { listRestaurants, loadRestaurant };
+const searchForRestaurant = term => {
+  return baseRestaurantService
+    .get(`/search?term=${term}`)
+    .then(response => {
+      const data = response.data;
+      const restaurants = data.restaurants;
+      return Promise.resolve(restaurants);
+    })
+    .catch(error => {
+      return Promise.reject(error);
+    });
+};
+
+export { listRestaurants, loadRestaurant, searchForRestaurant };

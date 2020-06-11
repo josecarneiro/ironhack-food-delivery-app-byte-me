@@ -11,6 +11,8 @@ const schema = new mongoose.Schema({
   photo: { type: String } //: String, URL
 });
 
+schema.index({ name: 'text' });
+
 const Model = mongoose.model('Restaurant', schema);
 
 module.exports = Model;

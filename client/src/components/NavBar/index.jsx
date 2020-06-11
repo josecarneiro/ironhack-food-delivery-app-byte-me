@@ -4,6 +4,7 @@ import './style.scss';
 import { Link } from 'react-router-dom';
 
 import ShoppingBasketTotal from './../ShoppingBasketTotal';
+import SearchBar from './../SearchBar';
 
 import { signOut } from './../../services/authentication';
 
@@ -26,6 +27,7 @@ const NavBar = props => {
           <strong>ME</strong>
         </div>
       </Link>
+      <SearchBar />
       {(props.user && (
         <>
           <img src={props.user.photo} alt={props.user.name} />

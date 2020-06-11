@@ -11,6 +11,7 @@ import RestaurantView from './views/Restaurant';
 import ShoppingBasketView from './views/ShoppingBasket';
 import CheckoutView from './views/Checkout';
 import PastOrdersView from './views/PastOrders';
+import SearchView from './views/Search';
 
 import AuthenticationSignUpView from './views/Authentication/SignUp';
 import AuthenticationSignInView from './views/Authentication/SignIn';
@@ -98,7 +99,6 @@ class App extends Component {
             />
             <Switch>
               <Route path="/" exact component={HomeView} />
-
               <Route
                 path="/restaurant/:id"
                 render={props => (
@@ -109,7 +109,6 @@ class App extends Component {
                   />
                 )}
               />
-
               <ProtectedRoute
                 path="/shopping-basket/checkout"
                 authorized={this.state.user}
@@ -122,7 +121,6 @@ class App extends Component {
                   />
                 )}
               />
-
               <Route
                 path="/shopping-basket"
                 render={props => (
@@ -134,23 +132,21 @@ class App extends Component {
                 )}
               />
               <Route path="/past-orders" component={PastOrdersView} />
-
+              s
+              <Route path="/search" component={SearchView} />
               <Route
                 path="/sign-up"
                 render={props => (
                   <AuthenticationSignUpView {...props} updateUser={this.updateUser} />
                 )}
               />
-
               <Route
                 path="/sign-in"
                 render={props => (
                   <AuthenticationSignInView {...props} updateUser={this.updateUser} />
                 )}
               />
-
               <Route path="/error/:code" component={ErrorView} />
-
               <Redirect to="/error/404" />
             </Switch>
           </BrowserRouter>

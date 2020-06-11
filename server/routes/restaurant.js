@@ -19,6 +19,27 @@ router.get('/list', (req, res, next) => {
     });
 });
 
+router.get('/search', (req, res, next) => {
+  const { term } = req.query;
+  // Alternative way without having to enforce a text index for property name
+  // Restaurant.find({ name: { $regex: term, $options: 'i' } })
+  Restaurant.find({
+    // $text isn't highly sensitive to short search terms
+    $text: {
+      $search: term,
+      $language: 'none'
+    }
+  })
+    .then(restaurants => {
+      res.json({
+        restaurants
+      });
+    })
+    .catch(error => {
+      next(error);
+    });
+});
+
 router.get('/:id', (req, res, next) => {
   const id = req.params.id;
   let restaurant;
